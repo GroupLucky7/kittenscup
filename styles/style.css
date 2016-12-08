@@ -145,7 +145,8 @@ body {
 }
 
 .kitty img {
-	max-height: 500px;
+	max-height: 80%;
+	max-width: 100%;
 	margin-top: -15px;
 }
 
