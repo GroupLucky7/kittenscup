@@ -107,6 +107,11 @@ body {
 	visibility: inherit;
 }
 
+.cardMis img {
+	width: 80%;
+	margin-bottom: -100px;
+}
+
 .card .front{
 	text-align: center;
 	font-size: 30px;
@@ -139,8 +144,8 @@ body {
 		position: absolute;
 }
 
-#kittyPic {
-	width: 100%;
+.kitty img {
+	max-height: 500px;
 	margin-top: -15px;
 }
 
