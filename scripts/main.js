@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+// RANDOM CATS
+var cat_images = ["cats1.png", "cats2.png", "cats3.png", "cats4.png"];
+
+function getRandomImage(imgAr, path) {
+    path = path || 'pics/cats/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    $('.kitty').append(imgStr); //document.close();
+}
+//END OF RANDOM CATS
+
   $(".card").hide();
   $(".mission").hide();
 
@@ -9,12 +21,16 @@ $(bop).prop("volume", 0.2);
 
 var categNr;
 var misNr;
+var content;
 var getRandom;
 
 $(".kitty").click(function(getRandom){
   bop.play();
   var getRandom = Math.floor((Math.random() * 13) + 1);
-  // console.log(getRandom);
+  //The next line can be un-quoted if you want to choose what number that comes up.
+  //Don't forget to quote-out the one above as well!
+  
+  // var getRandom = 14
 
   if (getRandom === 1) {
     var categNr = "<h2>Fill in the blanks</h2>";
@@ -52,17 +68,27 @@ $(".kitty").click(function(getRandom){
   } else if (getRandom === 12) {
     var categNr = "<h2>This is category 12</h2>";
     var misNr = "<h3>This is mission 12</h3>";
-  }else if (getRandom === 13) {
-    var categNr = "<h2>This is category 13</h2>";
-    var misNr = "<h3>This is mission 13</h3>";
-  } else {
+  }
+// Stockphotos Talk
+  else if (getRandom === 13) {
+    var categNr = "<h2>Stockphotos Talk</h2>";
+    var misNr = "<h3>Create a caption for the stockphoto below:</h3><br>";
+    var content = '<img src="pics/stocks/melonHead.jpg">'
+  }
+// Pronunciation
+  else if (getRandom === 14) {
+    var categNr = "<h2>Pronunciation</h2>";
+    var misNr = "<h3>Try to pronunce this word:<br><br><br><h2>Otorhinolaryngologist</h2></h3>";
+    var content = '<br><br><audio controls> <source src="audio/Otorhinolaryngologist.mp3" type="audio/mp3" </audio>';
+  }else {
     var categNr = "<h2>This is ERROR</h2>";
   }
 
-$("#kittyPic").hide();
+$(".kitty").empty();
 $(".card").fadeIn();
 $(".cardCat").append(categNr);
 $(".cardMis").append(misNr);
+$(".cardMis").append(content);
 
 })
 
@@ -71,11 +97,13 @@ $(".card").flip({
   trigger: 'click'
 });
 
+
+
 $(".back").click(function(){
   $(".card").hide();
   $(".cardCat").empty();
   $(".cardMis").empty();
-  $("#kittyPic").show();
+  $(".kitty").append(getRandomImage(cat_images));
 });
 
 });
