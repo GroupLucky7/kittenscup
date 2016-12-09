@@ -157,8 +157,9 @@ body {
 }
 #warning-message { display: none; }
 @media only screen and (orientation:portrait){
-		#wrapper { display:none; }
-		#warning-message { display:block; }
+		#wrapper { display:none; margin-top: 100px;}
+		#wrapper h2 { font-size: 4rem; }
+		#warning-message { display:block;  }
 }
 @media only screen and (orientation:landscape){
 		#warning-message { display:none; }
