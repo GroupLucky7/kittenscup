@@ -8,29 +8,44 @@
 <link href="https://fonts.googleapis.com/css?family=Bungee|Raleway:700" rel="stylesheet">
 </head>
 <body>
-<div class="containerOuter">
-  <div class="containerInner">
-    <div class="containerDash">
-      <h1>Kitten's Cup</h1>
-      <h2>FREE DRINKING GAME</h2>
-      <div class="kitty">
-        <img src="pics/cats/cats3.png" id="kittyPic">
-      </div>
-
-      <!-- card -->
-      <div class="card">
-        <div class="front">
-          <div class="cardCat">
-            <!-- <h2>Time Travel</h2> -->
-          </div>
+<style type="text/css">
+  #warning-message { display: none; }
+  @media only screen and (orientation:portrait){
+      #wrapper { display:none; }
+      #warning-message { display:block; }
+  }
+  @media only screen and (orientation:landscape){
+      #warning-message { display:none; }
+  }
+</style>
+<div id="wrapper">
+  <div class="containerOuter">
+    <div class="containerInner">
+      <div class="containerDash">
+        <h1>Kitten's Cup</h1>
+        <h2>FREE DRINKING GAME</h2>
+        <div class="kitty">
+          <img src="pics/cats/cats3.png" id="kittyPic">
         </div>
-        <div class="back">
-          <div class="cardMis">
+
+        <!-- card -->
+        <div class="card">
+          <div class="front">
+            <div class="cardCat">
+              <!-- <h2>Time Travel</h2> -->
+            </div>
+          </div>
+          <div class="back">
+            <div class="cardMis">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div id="warning-message">
+    this website is only viewable in landscape mode
 </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
