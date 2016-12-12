@@ -29,61 +29,63 @@ $(".kitty").click(function(getRandom){
   var getRandom = Math.floor((Math.random() * 15) + 1);
   //The next line can be un-quoted if you want to choose what number that comes up.
   //Don't forget to quote-out the one above as well!
-  // var getRandom = 13
+  // var getRandom = 14
 
   if (getRandom === 1) {
-  var categNr = "<h2>Fill in the blanks</h2>";
-  var misNr = "<h3>Pack it up, pack it in, let me _____, I came to win, battle me that’s a ___.</h3>";
+  var categNr = "Fill in the blanks";
+  var misNr = "Pack it up, pack it in, let me _____, I came to win, battle me that’s a ___.";
 } else if (getRandom === 2) {
-  var categNr = "<h2>Fill in the blanks</h2>";
-  var misNr = "<h3>I got sunshine, on a cloudy ___, when it’s cold outside, I’ve got the ____ __ ___.</h3>";
+  var categNr = "Fill in the blanks";
+  var misNr = "I got sunshine, on a cloudy ___, when it’s cold outside, I’ve got the ____ __ ___.";
 } else if (getRandom === 3) {
-  var categNr = "<h2>Fill in the blanks</h2>";
-  var misNr = "<h3>I’m gonna pop some tags, got __ _____ in my pocket. I - I’m hunting, looking for a come-up, this is fucking ______.</h3>";
+  var categNr = "Fill in the blanks";
+  var misNr = "I’m gonna pop some tags, got __ _____ in my pocket. I - I’m hunting, looking for a come-up, this is fucking ______.";
 } else if (getRandom === 4) {
-  var categNr = "<h2>Rules</h2>";
-  var misNr = "<h3>Darling. Call everyone ”Darling” for the rest of the game.</h3>";
+  var categNr = "Rules";
+  var misNr = "Darling. Call everyone ”Darling” for the rest of the game.";
 } else if (getRandom === 5) {
-  var categNr = "<h2>Rules</h2>";
-  var misNr = "<h3>No NO. You can't say 'NO' for the rest of the game.</h3>";
+  var categNr = "Rules";
+  var misNr = "No NO. You can't say 'NO' for the rest of the game.";
 } else if (getRandom === 6) {
-  var categNr = "<h2>Rules</h2>";
-  var misNr = "<h3>No phones. If you touch your phone during the game, the person in front of you is allowed to send any text message to any contacts you have</h3>";
+  var categNr = "Rules";
+  var misNr = "No phones. If you touch your phone during the game, the person in front of you is allowed to send any text message to any contacts you have";
 } else if (getRandom === 7) {
-  var categNr = "<h2>Rules</h2>";
-  var misNr = "<h3>The Narcissus rule: Everyone, including myself, compliment me every time they have to drink.</h3>";
+  var categNr = "Rules";
+  var misNr = "The Narcissus rule: Everyone, including myself, compliment me every time they have to drink.";
 } else if (getRandom === 8) {
-  var categNr = "<h2>Rules</h2>";
-  var misNr = "<h3>Mr. President rule. When you speak, you have to put your 2 fingers to your ear as if you are part of the President's security detail, communicating with other personnel</h3>";
+  var categNr = "Rules";
+  var misNr = "Mr. President rule. When you speak, you have to put your 2 fingers to your ear as if you are part of the President's security detail, communicating with other personnel";
 } else if (getRandom === 9) {
-  var categNr = "<h2>Time Travel</h2>";
-  var misNr = "<h3>Do a moonwalk</h3>";
+  var categNr = "Time Travel";
+  var misNr = "Do a moonwalk";
 } else if (getRandom === 10) {
-  var categNr = "<h2>Time Travel</h2>";
-  var misNr = "<h3>Do the Robot Dance</h3>";
+  var categNr = "Time Travel";
+  var misNr = "Do the Robot Dance";
 } else if (getRandom === 11) {
-  var categNr = "<h2>Describe the movie plot, if you can't, make one up. Drink if you fail</h2>";
-  var misNr = "<h3>Fight Club</h3>";
+  var categNr = "Describe the movie plot, if you can't, make one up. Drink if you fail";
+  var misNr = "Fight Club";
 } else if (getRandom === 12) {
-  var categNr = "<h2>Describe the movie plot, if you can't, make one up. Drink if you fail</h2>";
-  var misNr = "<h3>The Godfather</h3>";
+  var categNr = "Describe the movie plot, if you can't, make one up. Drink if you fail";
+  var misNr = "The Godfather";
 } else if (getRandom === 13) {
-  var categNr = "<h2>Describe the movie plot, if you can't, make one up. Drink if you fail</h2>";
-  var misNr = "<h3>Pulp Fiction</h3>";
+  var categNr = "Describe the movie plot, if you can't, make one up. Drink if you fail";
+  var misNr = "Pulp Fiction";
 }
 // Stockphotos Talk
 else if (getRandom === 14) {
-  var categNr = "<h2>Stockphotos Talk</h2>";
-  var misNr = "<h3>Create a caption for the stockphoto below:</h3><br>";
+  var categNr = "Stockphotos Talk";
+  var misNr = "Create a caption for the stockphoto below:<br>";
   var content = '<img src="pics/stocks/melonHead.jpg">'
 }
 // Pronunciation
 else if (getRandom === 15) {
-  var categNr = "<h2>Pronunciation</h2>";
-  var misNr = "<h3>Try to pronunce this word:<br><br><br><h2>Otorhinolaryngologist</h2></h3>";
-  var content = '<br><br><audio controls> <source src="audio/Otorhinolaryngologist.mp3" type="audio/mp3" </audio>';
-} else {
-  var categNr = "<h2>This is ERROR</h2>";
+  var categNr = "Pronunciation";
+  var misNr = "Try to pronunce this word: <br> Otorhinolaryngologist";
+  var content = '<br><audio controls> <source src="audio/Otorhinolaryngologist.mp3" type="audio/mp3" </audio>';
+}
+//ERROR
+else {
+  var categNr = "This is ERROR";
 }
 
 $(".kitty").empty();
