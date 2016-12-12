@@ -110,4 +110,21 @@ $(".back").click(function(){
   $(".kitty").append(getRandomImage(cat_images));
 });
 
+$('body').clickSpark({
+  particleImagePath: 'pics/particleCat.png',
+  particleCount: 20,
+  particleRotationSpeed: 20,
+  particleSize: 25,
+  particleDuration: 500,
+});
+
+// $('#wrapper').clickSpark({
+//   particleImagePath: '../particle-2.png',
+//   particleCount: 35,
+//   particleSpeed: 10,
+//   particleSize: 15,
+//   particleDuration: 400,
+//   particleRotationSpeed: 20
+// });
+
 });
