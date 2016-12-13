@@ -15,9 +15,9 @@ function getRandomImage(imgAr, path) {
   $(".card").hide();
   $(".mission").hide();
 
-var bop = new Audio('audio/bop.mp3');
-
-$(bop).prop("volume", 0.2);
+// var bop = new Audio('audio/bop.mp3');
+//
+// $(bop).prop("volume", 0.2);
 
 var categNr;
 var misNr;
@@ -25,7 +25,7 @@ var content;
 var getRandom;
 
 $(".kitty").click(function(getRandom){
-  bop.play();
+  // bop.play();
   var getRandom = Math.floor((Math.random() * 15) + 1);
   //The next line can be un-quoted if you want to choose what number that comes up.
   //Don't forget to quote-out the one above as well!
@@ -74,8 +74,8 @@ $(".kitty").click(function(getRandom){
 // Stockphotos Talk
 else if (getRandom === 14) {
   var categNr = "Stockphotos Talk";
-  var misNr = "Create a caption for the stockphoto below:<br>";
-  var content = '<img src="pics/stocks/melonHead.jpg">'
+  var misNr = "Create a caption for the stockphoto below:";
+  var content = '<br><img src="pics/stocks/melonHead.jpg">'
 }
 // Pronunciation
 else if (getRandom === 15) {
@@ -92,7 +92,7 @@ $(".kitty").empty();
 $(".card").fadeIn();
 $(".cardCat").append(categNr);
 $(".cardMis").append(misNr);
-$(".cardMis").append(content);
+$(".cardCont").append(content);
 
 })
 
@@ -107,6 +107,7 @@ $(".back").click(function(){
   $(".card").hide();
   $(".cardCat").empty();
   $(".cardMis").empty();
+  $(".cardCont").empty();
   $(".kitty").append(getRandomImage(cat_images));
 });
 
