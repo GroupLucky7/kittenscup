@@ -34,6 +34,7 @@ h3 {
 h4 {
   font-family: 'Raleway', sans-serif;
 	font-size: 1.8vw;
+  width: 80%;
 	margin: 0 auto;
 	padding: 0 auto;
 	text-align: center;
@@ -93,21 +94,22 @@ h4 {
 	position: absolute;
 }
 .cardCat {
-	position: relative;
-	margin: auto;
-  margin-top: 25%;
-  transform: translateY(-50%);
+	display: relative;
+  flex-direction: column;
 }
 .cardCat img {
-  max-width: 507px;
-  margin-top: 25%;
-  transform: translateY(-50%);
+  max-width: 500px;
+  margin-top: 5%;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
 .cardMis {
   position: relative;
   margin: auto;
   margin-top: 10%;
-  transform: translateY(-50%);
+  /*transform: translateY(-50%);*/
 }
 .cardCont img {
   margin-bottom: 100px;
@@ -155,6 +157,15 @@ h4 {
 .hidden {
 	display: none;
 }
+.blurry {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+}
+.cardAns {
+  /*visibility: hidden;*/
+}
 .button {
 	top: 88%;
 	text-align: center;
@@ -163,7 +174,6 @@ h4 {
   position: absolute;
   transform: translateX(-50%);
 }
-
 .overlay {
   position: fixed;
   top: 0;
@@ -184,14 +194,14 @@ h4 {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: 40%;
   position: relative;
   transition: all 5s ease-in-out;
 }
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: 'bungee', sans-serif;
 }
 .popup .close {
   position: absolute;
@@ -204,11 +214,15 @@ h4 {
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: #3752A0;
 }
 .popup .content {
   max-height: 30%;
+  width: 100%;
   overflow: auto;
+  text-align: left;
+  line-height: 2;
+  font-family: 'Raleway', sans-serif;
 }
 #warning-message { display: none; }
 @media only screen and (orientation:portrait){
