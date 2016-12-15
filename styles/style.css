@@ -40,6 +40,10 @@ h4 {
 	text-align: center;
 	color: #FEFBE3;
 }
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #FEFBE3;
+}
 #wrapper {
 	height: 100%;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -95,21 +99,22 @@ h4 {
 }
 .cardCat {
 	display: relative;
-  flex-direction: column;
+  /*flex-direction: column;*/
+  text-align: center;
 }
 .cardCat img {
   max-width: 500px;
   margin-top: 5%;
 }
-p {
-  font-family: 'Raleway', sans-serif;
-  color: white;
+.cardCatInst {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 90%;
 }
 .cardMis {
   position: relative;
   margin: auto;
   margin-top: 10%;
-  /*transform: translateY(-50%);*/
 }
 .cardCont img {
   margin-bottom: 100px;
@@ -118,7 +123,7 @@ p {
 .card .front{
 	background-color: #3752A0;
 	border-radius: 10%;
-	color: white;
+	color: #FEFBE3;
 	border: 4px solid #3752A0;
 }
 .card .back{
@@ -147,7 +152,6 @@ p {
  -moz-transition: all 0.1s ease;
  -o-transition: all 0.1s ease;
 }
-
 .kitty img:hover {
 	max-width: 575px;
   height: auto;
@@ -156,15 +160,6 @@ p {
 }
 .hidden {
 	display: none;
-}
-.blurry {
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-}
-.cardAns {
-  /*visibility: hidden;*/
 }
 .button {
 	top: 88%;
