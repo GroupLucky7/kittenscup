@@ -25,74 +25,90 @@ var charadesPic = '<img src="pics/categories/charades.png">'
   $(".card").hide();
   $(".mission").hide();
 
-// var bop = new Audio('audio/bop.mp3');
-//
-// $(bop).prop("volume", 0.2);
-
 var categNr;
 var catInst;
 var misNr;
 var content;
 var getRandom;
-//var answer;
 
-$(".kitty").click(function(getRandom){
+
+$(".kitty").click(function(){
   // bop.play();
-  var getRandom = Math.floor((Math.random() * 40) + 1);
+  getRandom = Math.floor((Math.random() * 40) + 1);
   //The next line can be un-quoted if you want to choose what number that comes up.
   //Don't forget to quote-out the one above as well!
-  // var getRandom = 30
+  // var getRandom = 10
 
 //FILL BLANKS
   if (getRandom === 1) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "Pack it up, pack it in, let me _____, I came to win, battle me that’s a sin.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "begin";
 } else if (getRandom === 2) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "I got sunshine, on a cloudy day, when it’s cold outside, I’ve got the _____ of May.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "month"
 } else if (getRandom === 3) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
-  var misNr = "I’m gonna pop some tags, got 20 dollars in my pocket. I - I’m hunting, looking for a come-up, this is fucking ______.";
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var misNr = "I’m gonna pop some tags, got 20 dollars in my pocket. I - I’m hunting, looking for a come-up, this is fucking _______.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "awesome";
 } else if (getRandom === 4) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "You are the ______ queen, young and sweet, almost seventeen.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "dancing";
 } else if (getRandom === 5) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "So tell me what you ____, what you really, really ____, I’ll tell you what I ____, what I really, really ____.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "want";
 } else if (getRandom === 6) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "Hey ____, don’t make it bad, take a sad song and make it better.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "Jude";
 } else if (getRandom === 7) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "Is this the real ____, is this just fantasy, caught in a landslide, escape from reality.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "life";
 } else if (getRandom === 8) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "Billie ____ is not my lover, she’s just a girl - who claims that I am the one, but the kid is not my son.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "Jean";
 } else if (getRandom === 9) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "Take me down to the ________ city, where the grass is green and the girls are pretty.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "paradise";
 } else if (getRandom === 10) {
   var categNr = fillBlanksPic;
-  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
+  var catInst = "Sing the lyrics (including the blanks) that are on the backside of this card. If you can't, you drink. You have 10 seconds.<br><br>(Want to know the answer? Google it you lazy SOB. Coding is hard.)"
   var misNr = "I see a red door and I want to paint it _____, no colours anymore I want them to turn _____.";
+  // var content = "";
+  $("#container").css("display", "");
   //var answer = "black";
 }
 //RULES
@@ -120,43 +136,43 @@ else if (getRandom === 11) {
 //DANCE MOVES
 else if (getRandom === 16) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "Do a moonwalk";
 } else if (getRandom === 17) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "Do the Robot Dance";
 } else if (getRandom === 18) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "Stop... Hammertime!";
 } else if (getRandom === 19) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "Vogueing!";
 } else if (getRandom === 20) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "Do the macarena!";
 } else if (getRandom === 21) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "Do a break dance move of your choice!";
 } else if (getRandom === 22) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "DAB! <br> Do 5 dabs as quickly as you can!";
 } else if (getRandom === 23) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "TWERK!";
 } else if (getRandom === 24) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "The running man!";
 } else if (getRandom === 25) {
   var categNr = danceMovesPic;
-  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink. You have 20 seconds."
+  var catInst = "Do the dance move that is displayed on the backside of this card. Your friends evaluate if you rockin’ it or not by voting. If not, drink."
   var misNr = "Do the snake dance!";
 }
 // STOCKPHOTOS TALK
@@ -164,27 +180,32 @@ else if (getRandom === 26) {
   var categNr = stockPic;
   var catInst = "Create a funny caption/quote for the photo on the backside of this card. If the other players do not think it is funny (decided by voting), you drink. You have 10 seconds."
   var misNr = "Create a caption for the stockphoto below:";
-  var content = '<img src="pics/stocks/stock1.jpg">'
+  var content = '<img src="pics/stocks/stock1.jpg">';
+  $("#container").css("display", "");
 } else if (getRandom === 27) {
   var categNr = stockPic;
   var catInst = "Create a funny caption/quote for the photo on the backside of this card. If the other players do not think it is funny (decided by voting), you drink. You have 10 seconds."
   var misNr = "Create a caption for the stockphoto below:";
-  var content = '<img src="pics/stocks/stock2.jpg">'
+  var content = '<img src="pics/stocks/stock2.jpg">';
+  $("#container").css("display", "");
 } else if (getRandom === 28) {
   var categNr = stockPic;
   var catInst = "Create a funny caption/quote for the photo on the backside of this card. If the other players do not think it is funny (decided by voting), you drink. You have 10 seconds."
   var misNr = "Create a caption for the stockphoto below:";
-  var content = '<img src="pics/stocks/stock3.jpg">'
+  var content = '<img src="pics/stocks/stock3.jpg">';
+  $("#container").css("display", "");
 } else if (getRandom === 29) {
   var categNr = stockPic;
   var catInst = "Create a funny caption/quote for the photo on the backside of this card. If the other players do not think it is funny (decided by voting), you drink. You have 10 seconds."
   var misNr = "Create a caption for the stockphoto below:";
-  var content = '<img src="pics/stocks/stock4.jpg">'
+  var content = '<img src="pics/stocks/stock4.jpg">';
+  $("#container").css("display", "");
 } else if (getRandom === 30) {
   var categNr = stockPic;
   var catInst = "Create a funny caption/quote for the photo on the backside of this card. If the other players do not think it is funny (decided by voting), you drink. You have 10 seconds."
   var misNr = "Create a caption for the stockphoto below:";
-  var content = '<img src="pics/stocks/stock5.jpg">'
+  var content = '<img src="pics/stocks/stock5.jpg">';
+  $("#container").css("display", "");
 }
 // CHARADES
 else if (getRandom === 31) {
@@ -239,19 +260,39 @@ $(".cardCatInst").append(catInst);
 $(".cardCat").append(categNr);
 $(".cardMis").append(misNr);
 $(".cardCont").append(content);
+
 //$(".cardAns").append(answer);
 
 })
-
-$(".blurry").click(function(){
-  $(".blurry").removeClass(".blurry");
-});
 
 $(".card").flip({
   axis: 'y',
   trigger: 'click'
 });
 
+$(".front").click(function(){
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+  if ( (26 <= getRandom && getRandom <= 30) || (1 <= getRandom && getRandom <= 10) ){
+    var bar = new ProgressBar.Line($("#container")[0], {
+      strokeWidth: 4,
+      easing: 'linear',
+      duration: 10000,
+      color: '#FFEA82',
+      trailColor: '#eee',
+      trailWidth: 1,
+      svgStyle: {width: '100%', height: '100%'},
+      from: {color: '#232249'},
+      to: {color: '#F12C31'},
+      step: (state, bar) => {
+        bar.path.setAttribute('stroke', state.color);
+      }
+    });
+
+    bar.animate(1.0);  // Number from 0.0 to 1.0
+  }
+
+})
 
 
 $(".back").click(function(){
@@ -260,6 +301,7 @@ $(".back").click(function(){
   $(".cardMis").empty();
   $(".cardCont").empty();
   $(".cardCatInst").empty();
+  $("#container").empty();
   //$(".cardAns").empty();
   $(".kitty").append(getRandomImage(cat_images));
 });
