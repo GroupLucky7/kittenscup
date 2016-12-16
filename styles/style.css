@@ -230,7 +230,7 @@ p {
 @media only screen and (orientation:portrait){
 		#wrapper { display:none;	}
 		#warning-message { display:block; }
-		#warning-message h2 { font-size: 6em; }
+		#warning-message h2 { font-size: 13vh; }
 }
 @media only screen and (orientation:landscape){
 		#warning-message { display:none; }
